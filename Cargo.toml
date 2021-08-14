@@ -7,4 +7,4 @@ authors = ["Avery R. <contact@nekodjin.xyz>"]
 homepage = "https://github.com/nekodjin/nkdbfi"
 repository = "https://github.com/nekodjin/nkdbfi"
 description = "A BrainFuck Interpreter with u8 cell size and infinite tape simulation."
-documentation = ""
+documentation = "https://github.com/nekodjin/nkdbfi"
