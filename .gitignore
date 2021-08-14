@@ -1,2 +1,4 @@
+/.idea
 /target
-/source.bf
+*.bf
+*.b

@@ -245,10 +245,12 @@ impl Program {
             self.dtape[&self.dp],
         );
 
-        self.dtape.insert(
-            self.dp,
-            self.input.next().unwrap().unwrap(),
-        );
+        let chr = self.input.next().unwrap_or(Ok(0)).unwrap();
+
+        #[cfg(debug_assertions)]
+        eprintln!("Called GHCR | Got: {:3} ({})", chr, chr as char);
+
+        self.dtape.insert(self.dp, chr);
 
         self.ip += 1;
     }
